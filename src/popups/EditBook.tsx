@@ -3,6 +3,7 @@ import Swal from 'sweetalert2'
 import axios from 'axios'
 import withReactContent from 'sweetalert2-react-content'
 import {Flex, Box, Button, Image, Input} from '@chakra-ui/react'
+import Categories from '../components/Categories'
 import {toasts} from '../pages/_app'
 import {INewIBookTable} from '../pages/api/getAllBooks'
 
@@ -38,13 +39,13 @@ const EditBook: React.FunctionComponent<IEditBook> = (props) => {
     if (loading) {
       return false
     }
-    if ((title.length < 3 || title.length > 30)) {
+    if ((title.length < 3 || title.length > 400)) {
       return false
     }
-    if ((author.length < 3 || author.length > 30)) {
+    if ((author.length < 3 || author.length > 400)) {
       return false
     }
-    if ((categories.length < 3 || categories.length > 30)) {
+    if ((categories.length < 3 || categories.length > 400)) {
       return false
     }
     if (!Number.isInteger(stock)) {
@@ -276,17 +277,7 @@ const EditBook: React.FunctionComponent<IEditBook> = (props) => {
         onChange={(e) => {setCategories(e.target.value)}}
       />
 
-      <datalist id="categories_list">
-        <option value="Científico" />
-        <option value="Auto Ajuda" />
-        <option value="Histórias" />
-        <option value="Fantasia" />
-        <option value="Ficção científica/histórica" />
-        <option value="Biografia" />
-        <option value="Política" />
-        <option value="Eletrônica" />
-        <option value="Automação" />
-      </datalist>
+      <Categories />
 
       <Input
         id="stock"
@@ -320,6 +311,11 @@ const EditBook: React.FunctionComponent<IEditBook> = (props) => {
           _disabled={{
             backgroundColor: '#9B9191 !important'
           }}
+          _focus={{
+            border: '1px solid #262A30',
+            borderColor: '#262A30',
+            boxShadow: '0 0 3px #262A30'
+          }}
           _hover={{
             backgroundColor: '#03A786'
           }}
@@ -336,6 +332,11 @@ const EditBook: React.FunctionComponent<IEditBook> = (props) => {
           marginLeft="10px"
           _disabled={{
             backgroundColor: '#9B9191'
+          }}
+          _focus={{
+            border: '1px solid #262A30',
+            borderColor: '#262A30',
+            boxShadow: '0 0 3px #262A30'
           }}
           _hover={{
             backgroundColor: '#DD5E69'

@@ -221,6 +221,11 @@ const Usuarios: React.FunctionComponent<IUsersProps> = (props) => {
                                 _disabled={{
                                   backgroundColor: '#9B9191'
                                 }}
+                                _focus={{
+                                  border: '1px solid #262A30',
+                                  borderColor: '#262A30',
+                                  boxShadow: '0 0 3px #262A30'
+                                }}
                                 _hover={{
                                   backgroundColor: '#DD5E69'
                                 }}
@@ -280,6 +285,11 @@ const Usuarios: React.FunctionComponent<IUsersProps> = (props) => {
                     width: '100%',
                     height: '40px'
                   }
+                }}
+                _focus={{
+                  border: '1px solid #262A30',
+                  borderColor: '#262A30',
+                  boxShadow: '0 0 3px #262A30'
                 }}
                 _hover={{
                   backgroundColor: '#03A786'
@@ -368,6 +378,11 @@ const Usuarios: React.FunctionComponent<IUsersProps> = (props) => {
                               onClick={() => deletePreAuthorization(preAutorized.email)}
                               _disabled={{
                                 backgroundColor: '#9B9191'
+                              }}
+                              _focus={{
+                                border: '1px solid #262A30',
+                                borderColor: '#262A30',
+                                boxShadow: '0 0 3px #262A30'
                               }}
                               _hover={{
                                 backgroundColor: '#DD5E69'

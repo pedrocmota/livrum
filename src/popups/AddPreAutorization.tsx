@@ -135,6 +135,11 @@ const MakeLending: React.FunctionComponent<IAddPreAutorization> = (props) => {
           _disabled={{
             backgroundColor: '#9B9191 !important'
           }}
+          _focus={{
+            border: '1px solid #262A30',
+            borderColor: '#262A30',
+            boxShadow: '0 0 3px #262A30'
+          }}
           _hover={{
             backgroundColor: '#03A786'
           }}
@@ -152,6 +157,11 @@ const MakeLending: React.FunctionComponent<IAddPreAutorization> = (props) => {
           marginLeft="10px"
           _disabled={{
             backgroundColor: '#9B9191'
+          }}
+          _focus={{
+            border: '1px solid #262A30',
+            borderColor: '#262A30',
+            boxShadow: '0 0 3px #262A30'
           }}
           _hover={{
             backgroundColor: '#DD5E69'
