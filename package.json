@@ -1,7 +1,7 @@
 {
   "name": "livrum",
   "displayName": "Livrum",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": {
     "name": "Pedro Mota"
@@ -22,6 +22,7 @@
     "@chakra-ui/react": "^2.0.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@svgr/webpack": "^6.2.1",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
     "cookies": "^0.8.0",

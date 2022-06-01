@@ -175,6 +175,11 @@ const MakeLending: React.FunctionComponent<IMakeLending> = (props) => {
           _disabled={{
             backgroundColor: '#9B9191 !important'
           }}
+          _focus={{
+            border: '1px solid #262A30',
+            borderColor: '#262A30',
+            boxShadow: '0 0 3px #262A30'
+          }}
           _hover={{
             backgroundColor: '#03A786'
           }}

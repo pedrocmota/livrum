@@ -356,6 +356,11 @@ const EditBook: React.FunctionComponent<IEditBook> = (props) => {
           _disabled={{
             backgroundColor: '#9B9191'
           }}
+          _focus={{
+            border: '1px solid #262A30',
+            borderColor: '#262A30',
+            boxShadow: '0 0 3px #262A30'
+          }}
           _hover={{
             backgroundColor: '#DD5E69'
           }}

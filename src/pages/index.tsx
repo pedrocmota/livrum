@@ -233,9 +233,19 @@ const Index: React.FunctionComponent<IIndexProps> = (props) => {
                   width="300px"
                   height="38px"
                   backgroundColor="transparent"
-                  border="1px solid #201D1D"
+                  color="#302C2C"
+                  border="1px solid #302C2C"
                   borderRadius="3px"
                   marginTop="20px"
+                  _hover={{
+                    border: '1px solid #3E454E',
+                    borderColor: '#3E454E',
+                  }}
+                  _focus={{
+                    border: '1px solid #262A30',
+                    borderColor: '#262A30',
+                    boxShadow: '0 0 3px #262A30'
+                  }}
                   onClick={() => {
                     multi.current = multi.current + 1
                     refresh(() => {
@@ -245,7 +255,7 @@ const Index: React.FunctionComponent<IIndexProps> = (props) => {
                 >
                   {(!loading) && 'Carregar mais'}
                   {(loading) && (
-                    <img src={Spinner.src} width="30px" height="30px" />
+                    <Spinner width="30px" height="30px" color="#302C2C" />
                   )}
                 </Button>
               )}
